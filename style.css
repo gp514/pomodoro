@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    background-color: lightgreen;
+    font-family: 'Rubik', sans-serif;
+}
+
+#timer {
+    font-size: 200px;
+    margin-top: 200px;
+    text-align: center;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+}
+
+#default {
+    cursor: pointer;
+}
