@@ -4,16 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bd321affd4.js" crossorigin="anonymous"></script>
     <title>Pomodoro Timer</title>
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div id="reset">RESET</div>
-    <div id="default">DEFAULT</div>
-    <h1 id="timer">START</h1>
-    <div>
-        <div>active: <span id="active-time">25</span> minutes</div>
-        <div>break: <span id="break-time">5</span> minutes</div>
+    <nav>
+        <div id="reset">RESET</div>
+        <div id="default">DEFAULT</div>
+    </nav>
+    <div class="main-block">
+        <span id="state">ACTIVE</span>
+        <h1 id="timer">START</h1>
+    </div>
+
+    <div class="toggle">
+        <div class="minute-set">
+            <div class="counter-label">active minutes</div><div class="counter" id="active-time"><i class="fas fa-caret-up"></i><span>25</span><i class="fas fa-caret-down"></i></div>
+        </div>
+        <div class="minute-set">
+            <div class="counter-label">break minutes</div><div class="counter" id="break-time"><i class="fas fa-caret-up"></i><span>5</span><i class="fas fa-caret-down"></i></div>
+        </div>
     </div>
     <script src="main.js" type="text/javascript"></script>
 </body>
